@@ -22,6 +22,9 @@ class Database:
         movie_ = Movie(title=movie.title, year=movie.year)
         return movie_
 
+    def update_movie(self, movie_key, movie):
+        self.movies[movie_key] = movie
+
     def get_movies(self):
         movies = []
         for movie_key, movie in self.movies.items():

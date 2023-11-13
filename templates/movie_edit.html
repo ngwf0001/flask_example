@@ -7,7 +7,8 @@
       <div class="field">
         <label for="title" class="label">Title</label>
         <div class="control">
-          <input type="text" name="title" class="input" required="required"/>
+          <input type="text" name="title" class="input" required="required"
+                  value="{{ values['title'] }}"/>
         </div>
       </div>
 
@@ -15,7 +16,8 @@
         <label for="year" class="label">Year</label>
         <div class="control">
           <input type="number" name="year" class="input"
-                 min="{{ min_year }}" max="{{ max_year }}"/>
+                  min="{{ min_year }}" max="{{ max_year }}"
+                  value="{{ values['year'] }}"/>
         </div>
       </div>
 
