@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <h1>testing3</h1>
+    {{ name }}
+    <img src="{{ url_for('static', filename='keropi.png') }}" alt="bbb">
+    The time now is <div id="clock"></div>
+    <form action="/movies" method="post">
+        <input type="text" name="name">
+        <input type="submit" value="submit">
+    </form>
+    <script src="{{ url_for('static', filename='try.js') }}"></script>
+    <script>
+        abc()
+    </script>
+
+
+{% endblock content %}
+
